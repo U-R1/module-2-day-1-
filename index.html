@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <script>
+      const numberOfCars = prompt(
+        "How many cars are in your garage?",
+        "Number of Cars"
+      );
+      const averageCarsWorth = prompt(
+        "How much worth has a single car on average?",
+        "Avg worth of car"
+      );
+
+      const numberOfMotorBikes = prompt(
+        "How many motorbikes are in your garage?",
+        "Number of Cars"
+      );
+      const averageMotorBikesWorth = prompt(
+        "How much worth has a single motorbike on average?",
+        "Avg worth of car"
+      );
+
+      const numberOfBikes = prompt(
+        "How many bikes are in your garage?",
+        "Number of Cars"
+      );
+      const averageBikesWorth = prompt(
+        "How much worth has a single bike on average?",
+        "Avg worth of car"
+      );
+
+      const carsValue = numberOfCars * averageCarsWorth;
+      const motorBikesValue = numberOfMotorBikes * averageMotorBikesWorth;
+      const bikesValue = numberOfBikes * averageBikesWorth;
+
+      const totalGarageValue = carsValue + motorBikesValue + bikesValue;
+
+      alert("Your garage is worth: " + totalGarageValue + "€");
+    </script>
+  </body>
+</html>
